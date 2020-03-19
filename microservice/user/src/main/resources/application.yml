@@ -1,0 +1,12 @@
+spring:
+  #当前选定的配置文件
+  profiles:
+    active: dev
+
+server:
+  port: 8080
+
+#默认情况下， Spring Boot会用Logback来记录日志;如果决定使用Log4j或者Log4j2，那么你只需要修改依赖，引入对应该日志实现的起步依赖，同时排除掉Logback
+logging:
+  config:
+    classpath: log/log4j2.xml
